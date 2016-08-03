@@ -1,4 +1,273 @@
 * {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.main-header {
+  padding: 10px 0 10px 20px;
+  background-color: black;
+}
+.main-header ul {
+  overflow: auto;
+}
+.main-header li {
+  font-size: .8em;
+  padding-right: 10px;
+  display: inline;
+  color: white;
+}
+.main-header li:nth-last-child(-n+4) {
+  float: right;
+}
+.main-nav-bar {
+  background-color: white;
+  padding: 20px;
+}
+.main-nav-bar ul {
+  overflow: auto;
+}
+.main-nav-bar li {
+  padding-right: 20px;
+  text-transform: uppercase;
+  display: inline;
+  color: hsl(0, 0%, 50%);
+}
+
+.jumbo-menu {
+  color: white;
+  padding: 10px;
+  overflow: auto;
+  background: linear-gradient(hsl(0,0%,90%), white 80%);
+}
+
+.main-item {
+
+  float: left;
+  padding: 20px;
+  height: 450px;
+  border-right: 10px solid white;
+  width: 50%;
+  background: linear-gradient( hsl(0, 100%, 80%) , black);
+}
+.secondary-item {
+
+  float: left;
+  padding: 10px;
+  border-bottom: 10px solid white;
+  width: 50%;
+  height: 225px;
+
+  background: linear-gradient(hsl(0, 0%, 80%), black);
+}
+.tertiary-item {
+  border-right: 10px solid white;
+  float: left;
+  padding: 10px;
+  width: 25%;
+  height: 225px;
+
+
+  background: linear-gradient(hsl(0, 0%, 80%), black);
+}
+
+#fourth-item {
+  background: linear-gradient(hsl(200, 100%, 80%), black);
+}
+.main-content {
+  width: 85%;
+  margin: auto;
+}
+.latest-news-menu {
+  background-color: grey;
+  overflow: auto;
+}
+.latest-news-menu .col {
+  float: left;
+  padding: 10px 10px 10px ;
+  width: 25%;
+  height: 300px;
+
+}
+.latest-news-menu  img {
+  width: 100%;
+  height: 50%;
+}
+.secondary-news-menu {
+  overflow: auto;
+  background-color: yellow;
+  padding: 0 10px;
+}
+.grid {
+  background-color: blue;
+  float: left;
+  padding: 10px;
+  width: 33.3333%;
+  height: 33%;
+}
+.secondary-news-menu div:nth-child(3n+3) {
+
+}
+.grid img {
+  width: 100%;
+  height: 40%;
+}
+.sub-grid {
+  background-color: pink;
+  height: 80px;
+}
+.sub-grid img {
+
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+.grid ul {
+  list-style: none;
+}
+.grid li {
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+.grid-2 {
+  float: left;
+}
+.grid-2  {
+  padding: 10px 10px 10px 0;
+  width: 25%;
+}
+
+.grid-2 img {
+  width: 100%;
+}
+.latest-deals-menu {
+  padding: 10px;
+  background-color: green;
+  overflow: auto;
+}
+.latest-deals-menu h2 {
+  font-size: 0.8em;
+}
+.hero-quote {
+  background-color: red;
+  width: 60%;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+
+}
+.social-menu {
+  background-color: blue;
+
+
+}
+.social-menu ul {
+  overflow: auto;
+  width: 50%;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+
+}
+.social-menu li {
+  padding-right: 20px;
+  display: inline-block;
+
+}
+.social-menu li:nth-child(6n+6) {
+  padding-right: 0;
+}
+
+.main-footer {
+  background-color: white;
+  text-align: center;
+  clear: left;
+}
+@media screen and (max-width: 980px) and (min-width: 720px) {
+   .main-item {
+     width: 100%;
+     height: 200px;
+     float: none;
+     border: none;
+     margin-bottom: 10px;
+   }
+   .secondary-item, .tertiary-item {
+     width: 31%;
+     border: none;
+     display: inline;
+     margin-right: 10px;
+   }
+   .latest-news-menu .col {
+     width: 33.3%;
+   }
+   .main-content {
+     width: 100%;
+   }
+   .secondary-news-menu .grid{
+     width: 50%;
+
+   }
+   .latest-deals-menu .grid-2 {
+     width: 33.3%;
+   }
+   .hero-quote {
+     width: 100%;
+   }
+}
+
+@media screen and (max-width: 720px)  {
+  .main-item, .secondary-item, .tertiary-item {
+      float: none;
+      width: 100%;
+      height: 30%;
+      margin-bottom: 10px;
+      border: none;
+    }
+    .latest-news-menu .col {
+      float: none;
+      width: 100%;
+      height: 100px;
+    }
+    .latest-news-menu img {
+      width: 20%;
+      height: 100%;
+      padding-right: 10px;
+      float: left;
+    }
+    .main-content {
+      width: 100%;
+    }
+    .latest-news-menu {
+      padding: 10px;
+      margin: 0;
+      width: 100%;
+    }
+    .secondary-news-menu .grid, .latest-deals-menu .grid-2 {
+      width: 100%;
+      float: none;
+    }
+    .latest-deals-menu .grid-2 {
+      height: 100px;
+    }
+    .latest-deals-menu {
+      padding: 10px;
+    }
+       .latest-deals-menu .grid-2 img {
+         float: left;
+         height: 100%;
+         width: 25%;
+         padding-right: 10px;
+       }
+    .hero-quote {
+      width: 100%;
+      font-size: .7em;
+    }
+    .main-header, .main-nav-bar {
+      display: none;
+    }
+    .jumbo-menu {
+
+    }
+
 }
